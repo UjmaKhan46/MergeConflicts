@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Career Roadmap</title>
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left panel -->
+    <div class="left">
+        <h2>Generate Roadmap</h2>
+        <input type="text" id="field" placeholder="Enter Career Field">
+        <button onclick="generateRoadmap()">Generate</button>
+    </div>
+
+    <!-- Center panel -->
+    <div class="center">
+        <h2>Your Roadmap</h2>
+
+        <div id="progressBox">
+            <div id="progressText">Progress: 0%</div>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+
+        <div id="roadmapBox">
+            <p>No roadmap generated yet.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="roadmap.js"></script>
+</body>
+</html>

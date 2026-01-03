@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferences</title>
+    <link rel="stylesheet" href="preferences.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left -->
+    <div class="left">
+        <h2>Set Preferences</h2>
+
+        <input type="text" id="field" placeholder="Career Field (e.g. Frontend)">
+        <input type="text" id="interest" placeholder="Your Interest">
+        <input type="text" id="goal" placeholder="Your Goal">
+
+        <button onclick="savePreferences()">Save</button>
+    </div>
+
+    <!-- Center -->
+    <div class="center">
+        <h2>Your Preferences</h2>
+        <div id="output">No preferences saved.</div>
+    </div>
+
+</div>
+
+<script src="preferences.js"></script>
+</body>
+</html>

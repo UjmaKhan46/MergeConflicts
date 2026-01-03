@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Roadmap Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">🚀 CareerRoadmap</div>
+    <ul>
+      <li onclick="openTab('homeTab')">Home</li>
+      <li onclick="openTab('loginTab')">Login</li>
+      <li onclick="openTab('profileTab')">Profile</li>
+      <li onclick="openTab('preferenceTab')">Preferences</li>
+      <li onclick="openTab('roadmapTab')">Roadmap</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- HOME PAGE -->
+    <div class="tab card" id="homeTab">
+      <h1>Welcome to Career Roadmap Generator</h1>
+      <p>Plan your career path step by step! Select your field, track progress, and stay motivated.</p>
+      <button class="full-btn" onclick="openTab('loginTab')">Get Started</button>
+    </div>
+
+    <!-- LOGIN TAB -->
+    <div class="tab card hidden" id="loginTab">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Enter your name">
+      <button class="full-btn" onclick="login()">Login</button>
+    </div>
+
+    <!-- PROFILE TAB -->
+    <div class="tab card hidden" id="profileTab">
+      <h2 id="welcomeText"></h2>
+      <p>Your profile is active.</p>
+    </div>
+
+    <!-- PREFERENCE TAB -->
+    <div class="tab card hidden" id="preferenceTab">
+      <h2>Career Preference</h2>
+      <input type="text" id="careerField" placeholder="e.g. Data Analyst, Frontend Developer">
+      <button class="full-btn" onclick="generateRoadmap()">Generate Roadmap</button>
+    </div>
+
+    <!-- ROADMAP TAB -->
+    <div class="tab card hidden" id="roadmapTab">
+      <h2>Your Roadmap</h2>
+      <div class="progress-bar">
+        <div id="progressFill">0%</div>
+      </div>
+      <div id="roadmapList" class="roadmap-container"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

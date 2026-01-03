@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Section -->
+    <div class="left">
+        <h2>Your Profile</h2>
+
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="email" id="email" placeholder="Enter Email">
+        <input type="text" id="field" placeholder="Career Field">
+
+        <button onclick="saveProfile()">Save Profile</button>
+    </div>
+
+    <!-- Center Output -->
+    <div class="center">
+        <h2>Profile Details</h2>
+        <div id="profileData">
+            <p>No profile created yet.</p>
+        </div>
+    </div>
+</div>
+
+<script src="profile.js"></script>
+</body>
+</html>
