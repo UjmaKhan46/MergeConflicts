@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Career Roadmap Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">🚀 CareerRoadmap</div>
+    <ul>
+      <li onclick="openTab('homeTab')">Home</li>
+      <li onclick="openTab('loginTab')">Login</li>
+      <li onclick="openTab('profileTab')">Profile</li>
+      <li onclick="openTab('preferenceTab')">Preferences</li>
+      <li onclick="openTab('roadmapTab')">Roadmap</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <!-- HOME -->
+    <div class="tab card" id="homeTab">
+      <h1>Career Roadmap Generator</h1>
+      <p>Generate a personalized roadmap and learning resources.</p>
+      <button class="full-btn" onclick="openTab('loginTab')">Get Started</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="tab card hidden" id="loginTab">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Enter your name">
+      <button class="full-btn" onclick="login()">Login</button>
+    </div>
+
+    <!-- PROFILE -->
+    <div class="tab card hidden" id="profileTab">
+      <h2 id="welcomeText"></h2>
+      <p>Your profile is active.</p>
+    </div>
+
+    <!-- PREFERENCES -->
+    <div class="tab card hidden" id="preferenceTab">
+      <h2>Career Preference</h2>
+      <input type="text" id="careerField" placeholder="e.g. Data Analyst, Frontend Developer">
+      <button class="full-btn" onclick="generateRoadmap()">Generate Roadmap</button>
+    </div>
+
+    <!-- ROADMAP + RESOURCES -->
+    <div class="tab card hidden" id="roadmapTab">
+      <h2>Your Roadmap</h2>
+
+      <!-- PROGRESS -->
+      <div class="progress-bar">
+        <div id="progressFill">0%</div>
+      </div>
+
+      <!-- ROADMAP -->
+      <div id="roadmapList" class="roadmap-container"></div>
+
+      <!-- RESOURCES -->
+      <h3 style="margin-top:20px;">📚 Learning Resources</h3>
+      <button class="full-btn"
+        onclick="generateResources(document.getElementById('careerField').value.toLowerCase())">
+        Generate Resources
+      </button>
+
+      <div id="resourceBox" class="resource-container"></div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
