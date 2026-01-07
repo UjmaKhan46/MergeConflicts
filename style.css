@@ -153,3 +153,19 @@ input {
   line-height: 28px;
   transition: width 0.4s;
 }
+/* RESOURCES */
+.resource-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.resource-item {
+  background: #fff3cd;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
