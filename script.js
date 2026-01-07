@@ -25,7 +25,7 @@ function generateRoadmap() {
       "Projects",
       "Job Preparation"
     ];
-  }
+  } 
   else if (field.includes("front")) {
     roadmapData = [
       "HTML & CSS",
@@ -34,7 +34,7 @@ function generateRoadmap() {
       "React.js",
       "Portfolio"
     ];
-  }
+  } 
   else if (field.includes("back")) {
     roadmapData = [
       "Backend Language",
@@ -43,7 +43,7 @@ function generateRoadmap() {
       "Authentication",
       "Deployment"
     ];
-  }
+  } 
   else if (field.includes("cyber")) {
     roadmapData = [
       "Networking",
@@ -52,7 +52,7 @@ function generateRoadmap() {
       "Ethical Hacking",
       "Certifications"
     ];
-  }
+  } 
   else {
     roadmapData = [
       "Fundamentals",
@@ -107,7 +107,7 @@ function generateResources(field) {
       "Data Visualization – Tableau",
       "Statistics – Khan Academy"
     ];
-  }
+  } 
   else if (field.includes("front")) {
     resources = [
       "HTML & CSS – MDN",
@@ -115,7 +115,7 @@ function generateResources(field) {
       "React – Official Docs",
       "Frontend Mentor – Projects"
     ];
-  }
+  } 
   else if (field.includes("back")) {
     resources = [
       "Backend Languages – Java / Python",
@@ -124,7 +124,7 @@ function generateResources(field) {
       "Authentication",
       "Deployment"
     ];
-  }
+  } 
   else if (field.includes("cyber")) {
     resources = [
       "Networking Basics",
@@ -133,7 +133,7 @@ function generateResources(field) {
       "Ethical Hacking",
       "Security Certifications"
     ];
-  }
+  } 
   else {
     resources = ["No resources available"];
   }
@@ -148,4 +148,5 @@ function generateResources(field) {
     box.appendChild(div);
   });
 }
+
 
